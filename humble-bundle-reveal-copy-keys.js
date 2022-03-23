@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         HB Reveal Key
-// @version      0.1
+// @version      0.2
 // @description  Bulk reveal and copy keys from Humble Bundle
 // @match        https://www.humblebundle.com/downloads*
 // @icon         https://www.google.com/s2/favicons?domain=humblebundle.com
@@ -23,7 +23,7 @@
     const keys = document.getElementsByClassName('keyfield-value');
     let result = '';
     for (let i = 0; i < titles.length; i++) {
-      result += `${titles[i].innerText}\n${keys[i].innerText}\n\n`;
+      result += `${titles[i].innerText}\n${keys[i]?.innerText}\n\n`;
     }
     navigator.clipboard.writeText(result);
   };
