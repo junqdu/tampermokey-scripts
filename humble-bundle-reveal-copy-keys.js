@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         HB Reveal Key
-// @version      0.2
+// @version      0.3
 // @description  Bulk reveal and copy keys from Humble Bundle
 // @match        https://www.humblebundle.com/downloads*
 // @icon         https://www.google.com/s2/favicons?domain=humblebundle.com
