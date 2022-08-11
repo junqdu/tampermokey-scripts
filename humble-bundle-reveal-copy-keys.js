@@ -23,7 +23,7 @@
     const keys = document.getElementsByClassName('keyfield-value');
     let result = '';
     for (let i = 0; i < titles.length; i++) {
-      result += `${titles[i].innerText}\n${keys[i]?.innerText}\n\n`;
+      result += `${titles[i].innerText} - ${keys[i]?.innerText}\n\n`;
     }
     navigator.clipboard.writeText(result);
   };
